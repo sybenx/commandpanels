@@ -1,0 +1,589 @@
+panels:
+  GameRules:
+    perm: default
+    rows: '6'
+    title: '&8Game Rules'
+    empty: AIR
+    item:
+      '10':
+        material: paper
+        name: Announce Advancements
+        lore:
+          - Whether advancements should be announced in chat.
+          - 'Current: %gamerule_announceAdvancements%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule announceAdvancements $<gamerule_announceAdvancements:toggle>'
+          - 'refresh'
+      '11':
+        material: daylight_detector
+        name: Daylight Cycle
+        lore:
+          - Whether the daylight cycle and moon phases progress
+          - 'Current: %gamerule_doDaylightCycle%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doDaylightCycle $<gamerule_doDaylightCycle:toggle>'
+          - 'refresh'
+      '12':
+        material: water_bucket
+        name: Weather Cycle
+        lore:
+          - Whether the weather can change naturally
+          - 'Current: %gamerule_doWeatherCycle%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doWeatherCycle $<gamerule_doWeatherCycle:toggle>'
+          - 'refresh'
+      '13':
+        material: crossbow
+        name: Disable Raids
+        lore:
+          - Whether village raids are disabled
+          - 'Current: %gamerule_disableRaids%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule disableRaids $<gamerule_disableRaids:toggle>'
+          - 'refresh'
+      '14':
+        material: totem_of_undying
+        name: Immediate Respawn
+        lore:
+          - 'Whether players should immediately '
+          - 'respawn after death without being '
+          - shown the respawn screen.
+          - 'Current: %gamerule_doImmediateRespawn%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doImmediateRespawn $<gamerule_doImmediateRespawn:toggle>'
+          - 'refresh'
+      '15':
+        material: phantom_membrane
+        name: Insomnia
+        lore:
+          - Whether Phantoms can spawn at night.
+          - 'Current: %gamerule_doInsomnia%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doInsomnia $<gamerule_doInsomnia:toggle>'
+          - 'refresh'
+      '16':
+        material: fire_charge
+        name: Fire Spread
+        lore:
+          - Whether fire should spread
+          - 'Current: %gamerule_doFireTick%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doFireTick $<gamerule_doFireTick:toggle>'
+          - 'refresh'
+      '19':
+        material: chest
+        name: Keep Inventory
+        lore:
+          - Whether players should keep their inventory on death.
+          - 'Current: %gamerule_keepInventory%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule keepInventory $<gamerule_keepInventory:toggle>'
+          - 'refresh'
+      '20':
+        material: spawner
+        name: Mob Spawning
+        lore:
+          - 'Whether mobs should naturally '
+          - 'spawn. Does not affect monster '
+          - spawners.
+          - 'Current: %gamerule_doMobSpawning%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doMobSpawning $<gamerule_doMobSpawning:toggle>'
+          - 'refresh'
+      '21':
+        material: rotten_flesh
+        name: Mob Loot
+        lore:
+          - Whether mobs should drop items.
+          - 'Current: %gamerule_doMobLoot%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doMobLoot $<gamerule_doMobLoot:toggle>'
+          - 'refresh'
+      '22':
+        material: bone
+        name: Mob Griefing
+        lore:
+          - Whether mobs should be able to change blocks and pickup items.
+          - 'Current: %gamerule_mobGriefing%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule mobGriefing $<gamerule_mobGriefing:toggle>'
+          - 'refresh'
+      '23':
+        material: cow_spawn_egg
+        name: Patrol Spawning
+        lore:
+          - Whether Patrols can spawn.
+          - 'Current: %gamerule_doPatrolSpawning%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doPatrolSpawning $<gamerule_doPatrolSpawning:toggle>'
+          - 'refresh'
+      '24':
+        material: purple_bed
+        name: Player Sleeping Percentage
+        lore:
+          - 'Percentage of players required to '
+          - be sleeping in order to skip the night.
+          - 'Current: %gamerule_playersSleepingPercentage%'
+          - '&eClick to change!'
+        commands:
+          - 'open panel PlayerSleepingPercentage'
+      '25':
+        material: red_bed
+        name: Spawn Radius
+        lore:
+          - Number of blocks around the world's
+          - spawn location within which players
+          - will spawn if they don't have a spawn
+          - location set.
+          - 'Current: %gamerule_spawnRadius%'
+          - '&eClick to change!'
+        commands:
+          - 'open panel SpawnRadius'
+      '28':
+        material: wandering_trader_spawn_egg
+        name: Trader Spawning
+        lore:
+          - Whether Wandering Traders can
+          - spawn.
+          - 'Current: %gamerule_doTraderSpawning%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doTraderSpawning $<gamerule_doTraderSpawning:toggle>'
+          - 'refresh'
+      '29':
+        material: lily_pad
+        name: Drowning Damage
+        lore:
+          - Whether players should take damage
+          - when drowning.
+          - 'Current: %gamerule_drowningDamage%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule drowningDamage $<gamerule_drowningDamage:toggle>'
+          - 'refresh'
+      '30':
+        material: slime_block
+        name: Fall Damage
+        lore:
+          - Whether players should take fall
+          - damage.
+          - 'Current: %gamerule_fallDamage%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule fallDamage $<gamerule_fallDamage:toggle>'
+          - 'refresh'
+      '31':
+        material: lava_bucket
+        name: Fire Damage
+        lore:
+          - Whether players should take fire
+          - damage.
+          - 'Current: %gamerule_fireDamage%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule fireDamage $<gamerule_fireDamage:toggle>'
+          - 'refresh'
+      '32':
+        material: book
+        name: Show Death Messages
+        lore:
+          - 'Whether messages are put into chat '
+          - when a player dies.
+          - 'Current: %gamerule_showDeathMessages%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule showDeathMessages $<gamerule_showDeathMessages:toggle>'
+          - 'refresh'
+      '33':
+        material: golden_apple
+        name: Natural Regeneration
+        lore:
+          - Whether players will naturally
+          - regenerate health.
+          - 'Current: %gamerule_naturalRegeneration%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule naturalRegeneration $<gamerule_naturalRegeneration:toggle>'
+          - 'refresh'
+      '34':
+        material: command_block
+        name: Command Block Output
+        lore:
+          - Whether command blocks should
+          - notify OPs when they perform
+          - commands.
+          - 'Current: %gamerule_commandBlockOutput%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule commandBlockOutput $<gamerule_commandBlockOutput:toggle>'
+          - 'refresh'
+      '53':
+        material: arrow
+        name: Next Page
+        lore:
+          - '&ePage 2'
+        commands:
+          - 'open panel GameRules2'
+    commands:
+      - rules
+      - gamerules
+
+  GameRules2:
+    perm: default
+    rows: '6'
+    title: '&8(2/2) Game Rules'
+    empty: AIR
+    item:
+      '10':
+        material: string
+        name: Universal Anger
+        lore:
+          - 'Makes angered neutral mobs attack '
+          - 'any nearby player, not just the'
+          - player that angered them.
+          - 'Current: %gamerule_universalAnger%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule universalAnger $<gamerule_universalAnger:toggle>'
+          - 'refresh'
+      '11':
+        material: wither_skeleton_skull
+        name: Forgive Dead Players
+        lore:
+          - Makes angered neutral mobs stop
+          - being angry when the targeted
+          - player dies nearby.
+          - 'Current: %gamerule_forgiveDeadPlayers%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule forgiveDeadPlayers $<gamerule_forgiveDeadPlayers:toggle>'
+          - 'refresh'
+      '12':
+        material: powder_snow_bucket
+        name: Freeze Damage
+        lore:
+          - 'Whether the player should take '
+          - damage when inside powder snow.
+          - 'Current: %gamerule_freezeDamage%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule freezeDamage $<gamerule_freezeDamage:toggle>'
+          - 'refresh'
+      '13':
+        material: warden_spawn_egg
+        name: Warden Spawning
+        lore:
+          - Whether wardens can spawn.
+          - 'Current: %gamerule_doWardenSpawning%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doWardenSpawning $<gamerule_doWardenSpawning:toggle>'
+          - 'refresh'
+      '14':
+        material: jukebox
+        name: Global Sound Events
+        lore:
+          - Whether certain sound events are
+          - heard by all players regardless of
+          - location.
+          - 'Current: %gamerule_globalSoundEvents%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule globalSoundEvents $<gamerule_globalSoundEvents:toggle>'
+          - 'refresh'
+      '15':
+        material: water_bucket
+        name: Water Source Conversion
+        lore:
+          - Whether new sources of water are allowed to form.
+          - 'Current: %gamerule_waterSourceConversion%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule waterSourceConversion $<gamerule_waterSourceConversion:toggle>'
+          - 'refresh'
+      '16':
+        material: lava_bucket
+        name: Lava Source Conversion
+        lore:
+          - 'Whether new sources of lava are '
+          - allowed to form.
+          - 'Current: %gamerule_lavaSourceConversion%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule lavaSourceConversion $<gamerule_lavaSourceConversion:toggle>'
+          - 'refresh'
+      '19':
+        material: brown_bed
+        name: Block Explosion Drop Decay
+        lore:
+          - Whether block loot is dropped by all
+          - 'blocks (disabled) or randomly '
+          - (enabled) depending on how far the
+          - block is from the center of a block
+          - explosion (e.g. clicking a bed in
+          - dimensions other than the overworld).
+          - 'Current: %gamerule_blockExplosionDropDecay%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule blockExplosionDropDecay $<gamerule_blockExplosionDropDecay:toggle>'
+          - 'refresh'
+      '20':
+        material: creeper_head
+        name: Mob Explosion Drop Decay
+        lore:
+          - Whether block loot is dropped by all
+          - 'blocks (disabled) or randomly '
+          - (enabled) depending on how far the
+          - block is from the center of a block
+          - explosion (e.g. Creeper explosion).
+          - 'Current: %gamerule_mobExplosionDropDecay%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule mobExplosionDropDecay $<gamerule_mobExplosionDropDecay:toggle>'
+          - 'refresh'
+      '21':
+        material: tnt
+        name: TNT Explosion Drop Decay
+        lore:
+          - Whether block loot is dropped by all
+          - 'blocks (false) or randomly (true) '
+          - 'depending on how far the block is '
+          - from the center of a TNT explosion.
+          - 'Current: %gamerule_tntExplosionDropDecay%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule tntExplosionDropDecay $<gamerule_tntExplosionDropDecay:toggle>'
+          - 'refresh'
+      '22':
+        material: snow_block
+        name: Snow Accumulation Height
+        lore:
+          - 'The maximum number of snow layers '
+          - 'that can be accumulated on each '
+          - block.
+          - 'Current: %gamerule_maxEntityCramming%'
+          - '&eClick to change!'
+        commands:
+          - 'open panel SnowAccumulationHeight'
+      '23':
+        material: vine
+        name: Vine Spread
+        lore:
+          - 'Whether vines can spread to other '
+          - 'blocks. Cave vines, weeping vines,'
+          - and twisting vines are not affected.
+          - 'Current: %gamerule_doVinesSpread%'
+          - '&eClick to toggle!'
+        commands:
+          - 'gamerule doVinesSpread $<gamerule_doVinesSpread:toggle>'
+          - 'refresh'
+    '24':
+      material: ender_pearl
+      name: Ender Pearls Vanish on Death
+      lore:
+        - 'Controls whether thrown ender '
+        - pearls vanish when a players dies.
+        - 'Current: %gamerule_doEnderPearlsVanishOnDeath%'
+        - '&eClick to toggle!'
+      commands:
+        - 'gamerule doEnderPearlsVanishOnDeath $<gamerule_doEnderPearlsVanishOnDeath:toggle>'
+        - 'refresh'
+    '25':
+      material: arrow
+      name: Projectiles Can Break Blocks
+      lore:
+        - Whether impact projectiles destroy
+        - 'blocks that are destructible by them,'
+        - 'i.e. chorus flowers, pointed'
+        - 'dripstone, and decorated pots.'
+        - 'Current: %gamerule_projectilesCanBreakBlocks%'
+        - '&eClick to toggle!'
+      commands:
+        - 'gamerule projectilesCanBreakBlocks $<gamerule_projectilesCanBreakBlocks:toggle>'
+        - 'refresh'
+    '28':
+      material: obsidian
+      name: Players' Nether Portal Default Delay
+      lore:
+        - Controls the time that a
+        - non-creative player needs to stand
+        - in a nether portal before changing
+        - dimensions.
+        - 'Current: %gamerule_netherPortalDefaultDelay%'
+        - '&eClick to change!'
+      commands:
+        - 'open panel NetherPortalDefaultDelay'
+    '29':
+      material: crying_obsidian
+      name: Players' Nether Portal Creative Delay
+      lore:
+        - 'Controls the time that a creative '
+        - 'player needs to stand in a nether '
+        - portal before changing dimensions.
+        - 'Current: %gamerule_netherPortalCreativeDelay%'
+        - '&eClick to change!'
+      commands:
+        - 'open panel NetherPortalCreativeDelay'
+    '45':
+      material: arrow
+      name: Previous Page
+      lore:
+        - '&ePage 1'
+      commands:
+        - 'open panel GameRules'
+  
+  PlayerSleepingPercentage:
+    perm: default
+    rows: '3'
+    title: '&8Player Sleeping Percentage'
+    empty: AIR
+    item:
+      '11':
+        material: light_blue_bed
+        name: '0% (Always skip night)'
+        commands:
+          - 'gamerule playersSleepingPercentage 0'
+          - 'open panel GameRules'
+      '12':
+        material: blue_bed
+        name: '50%'
+        commands:
+          - 'gamerule playersSleepingPercentage 50'
+          - 'open panel GameRules'
+      '13':
+        material: purple_bed
+        name: '100% (Default)'
+        commands:
+          - 'gamerule playersSleepingPercentage 100'
+          - 'open panel GameRules'
+      '15':
+        material: book
+        name: Custom Value
+        commands:
+          - 'customvalue PlayerSleepingPercentage playersSleepingPercentage 0 100'
+  
+  SpawnRadius:
+    perm: default
+    rows: '3'
+    title: '&8Spawn Radius'
+    empty: AIR
+    item:
+      '11':
+        material: red_bed
+        name: '0 (Exact spawn)'
+        commands:
+          - 'gamerule spawnRadius 0'
+          - 'open panel GameRules'
+      '12':
+        material: orange_bed
+        name: '5'
+        commands:
+          - 'gamerule spawnRadius 5'
+          - 'open panel GameRules'
+      '13':
+        material: yellow_bed
+        name: '10 (Default)'
+        commands:
+          - 'gamerule spawnRadius 10'
+          - 'open panel GameRules'
+      '15':
+        material: book
+        name: Custom Value
+        commands:
+          - 'customvalue SpawnRadius spawnRadius 0 100'
+  
+  SnowAccumulationHeight:
+    perm: default
+    rows: '3'
+    title: '&8Snow Accumulation Height'
+    empty: AIR
+    item:
+      '11':
+        material: snow
+        name: '1 (Default)'
+        commands:
+          - 'gamerule snowAccumulationHeight 1'
+          - 'open panel GameRules2'
+      '12':
+        material: snow_block
+        name: '8 (Full block)'
+        commands:
+          - 'gamerule snowAccumulationHeight 8'
+          - 'open panel GameRules2'
+      '15':
+        material: book
+        name: Custom Value
+        commands:
+          - 'customvalue SnowAccumulationHeight snowAccumulationHeight 1 8'
+  
+  NetherPortalDefaultDelay:
+    perm: default
+    rows: '3'
+    title: '&8Nether Portal Default Delay'
+    empty: AIR
+    item:
+      '11':
+        material: obsidian
+        name: '40 (2 seconds)'
+        commands:
+          - 'gamerule netherPortalDefaultDelay 40'
+          - 'open panel GameRules2'
+      '12':
+        material: obsidian
+        name: '80 (4 seconds, Default)'
+        commands:
+          - 'gamerule netherPortalDefaultDelay 80'
+          - 'open panel GameRules2'
+      '13':
+        material: obsidian
+        name: '120 (6 seconds)'
+        commands:
+          - 'gamerule netherPortalDefaultDelay 120'
+          - 'open panel GameRules2'
+      '15':
+        material: book
+        name: Custom Value
+        commands:
+          - 'customvalue NetherPortalDefaultDelay netherPortalDefaultDelay 0 1000'
+  
+  NetherPortalCreativeDelay:
+    perm: default
+    rows: '3'
+    title: '&8Nether Portal Creative Delay'
+    empty: AIR
+    item:
+      '11':
+        material: crying_obsidian
+        name: '0 (Instant)'
+        commands:
+          - 'gamerule netherPortalCreativeDelay 0'
+          - 'open panel GameRules2'
+      '12':
+        material: crying_obsidian
+        name: '40 (2 seconds)'
+        commands:
+          - 'gamerule netherPortalCreativeDelay 40'
+          - 'open panel GameRules2'
+      '13':
+        material: crying_obsidian
+        name: '80 (4 seconds, Default)'
+        commands:
+          - 'gamerule netherPortalCreativeDelay 80'
+          - 'open panel GameRules2'
+      '15':
+        material: book
+        name: Custom Value
+        commands:
+          - 'customvalue NetherPortalCreativeDelay netherPortalCreativeDelay 0 1000'
